@@ -1,21 +1,47 @@
 # Problem Statement
 
-## Background
+## Overview
 
-[Describe the broader context. What domain or industry does this problem belong to? What situation creates the problem?]
+Supply chain disruptions such as severe weather events, port strikes, and geopolitical crises can affect many shipments simultaneously. These disruptions can cause delays, overloaded routes, and inefficient use of fleet resources.
 
-## The Problem
+## Who Is Affected?
 
-[State the problem clearly and specifically. Avoid vague statements like "things are slow" — instead say "Operations teams spend an average of 45 minutes per incident diagnosing pipeline failures because logs are scattered across 6 different tools."]
+The main users affected are:
 
-## Who is Affected
+- Supply chain and logistics managers
+- Fleet operators
+- Shipment coordinators
+- Cold-chain logistics teams
+- Businesses that depend on timely deliveries
 
-[Describe the specific user or persona experiencing this problem. Be concrete — not "developers" but "backend engineers managing CI/CD pipelines in enterprises with 50+ microservices."]
+## Key Problems
 
-## Why It Matters
+### 1. Shipment Disruptions
 
-[What is the cost of this problem? Lost time? Revenue? Safety risk? Frustration? Quantify if possible.]
+When a disruption occurs, it can be difficult to quickly identify which shipments are affected and which shipments should receive the highest priority.
 
-## Why Existing Solutions Fall Short
+### 2. Fleet Underutilisation
 
-[Briefly explain what people currently do and why it doesn't fully solve the problem. This sets up why your solution is needed.]
+Some trucks and other fleet assets may remain idle while other routes become overloaded. Without proper visibility, available assets cannot be efficiently redeployed.
+
+### 3. Cold-Chain Risk
+
+Temperature-sensitive shipments can be damaged when temperatures move outside their safe range. Detecting the problem only at delivery may be too late.
+
+### 4. Delayed Decisions
+
+When shipment, fleet, and temperature information is handled manually, identifying problems and deciding what action to take can become slow and difficult.
+
+## Why This Problem Matters
+
+A supply chain disruption can affect multiple shipments and create a chain reaction across logistics operations. Early identification of affected shipments, available fleet resources, and cold-chain temperature problems can help logistics teams respond before the situation becomes more serious.
+
+## Our Focus
+
+SmartSupply AI focuses on providing a simple decision-support prototype that can:
+
+- Identify delayed and disrupted shipments
+- Calculate shipment risk
+- Detect cold-chain temperature excursions
+- Identify idle fleet assets
+- Recommend actions for high-risk shipments
