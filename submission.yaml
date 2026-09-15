@@ -9,51 +9,54 @@
 # =============================================================================
 
 team:
-  name: ""                             # REQUIRED — e.g., "Orion Squad"
-  track: ""                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
+  name:tech titans                            # REQUIRED — e.g., "Orion Squad"
+  track:AI                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
   lead:
-    name: ""                           # REQUIRED — e.g., "Alice Chen"
-    email: ""                          # REQUIRED — e.g., "alice.chen@ibm.com"
+    name:SHUBHAM SHIYAL                          # REQUIRED — e.g., "Alice Chen"
+    email:26it085@charusat.edu.in             # REQUIRED — e.g., "alice.chen@ibm.com"
   members:
-    - name: ""                         # REQUIRED — Team member 1
-      email: ""
-    - name: ""                         # Add more members by copying the two lines above
-      email: ""
-    - name: ""
-      email: ""
+    - name:meghal patel            # REQUIRED — Team member 1
+      email:26it057@charusat.edu.in
+    - name:adit rohit          # Add more members by copying the two lines above
+      email:26it078@charusat.edu.in
+    - name:shubh soni
+      email:26it086@charusat.edu.in
 
 submission:
-  title: ""                            # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
+  title: "SmartSupply AI – Supply Chain Disruption Assistant"    # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
 
   problem_statement: >                 # REQUIRED — 1-3 sentences. What problem? Who has it?
-    Replace this text with a concise description of the real-world problem
-    your project addresses and who experiences it.
+    Supply chain disruptions caused by weather events, port strikes, and geopolitical crises can affect hundreds of shipments at the same time. It is difficult to track these disruptions manually, while some fleet assets remain idle and other routes become overloaded. Cold-chain shipments are 
+    especially vulnerable because temperature excursions can spoil valuable cargo,and these problems may only be discovered at delivery.Our goal is to build a Supply Chain Disruption Assistant that identifies affected shipments, recommends alternative routes or carriers, finds idle fleet assets for redeployment, and detects cold-chain temperature excursions before delivery.
+
 
   solution_summary: >                  # REQUIRED — 1-3 sentences. What did you build?
-    Replace this text with a clear description of your solution
-    and how it addresses the problem above.
-
-  key_features:                        # REQUIRED — List 3 to 5 specific features you implemented
-    - ""                               # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
-    - ""
-    - ""
-    - ""                               # optional 4th
-    - ""                               # optional 5th
-
-  tech_stack:
-    languages: []                      # REQUIRED — e.g., ["Python", "TypeScript"]
-    frameworks: []                     # e.g., ["FastAPI", "React"]
-    ibm_technologies: []               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
-    databases: []                      # e.g., ["PostgreSQL", "Redis"]
-    other: []                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
+        SmartSupply AI is a supply chain disruption assistant that analyses shipment and fleet information to identify disrupted or delayed shipments and prioritise them based on risk. It detects cold-chain temperature excursions, identifies idle fleet assets for redeployment, and recommends alternative routes or carriers for affected shipments. The solution provides clear recommendations to help reduce delays, protect sensitive cargo, and improve fleet utilisation. 
+    key_features:
+  - "Shipment disruption and delay detection"
+  - "Risk scoring and priority classification"
+  - "Alternative route and carrier recommendations"
+  - "Idle fleet asset identification and redeployment"
+  - "Cold-chain temperature excursion detection"
+  
+    tech_stack:
+  - "C++"
+  - "C++ Standard Library"
+  - "GitHub"
+  - "IBM Bob"
+  
 
   what_we_are_most_proud_of: >         # Optional but recommended — guides judges to your best work
-    Replace with what aspect of the submission you consider strongest
-    and want judges to pay special attention to.
+   We are most proud of creating a simple and practical solution to a real-world supply chain problem. SmartSupply AI combines shipment risk detection, cold-chain monitoring, fleet utilisation, and actionable recommendations in one solution, making complex supply chain problems easier to understand and manage.
+
 
   known_limitations: >                 # Optional but recommended — be honest about gaps
-    Replace with any known limitations, incomplete features,
-    or shortcuts taken due to time constraints.
+    known_limitations:
+  - "The current prototype uses manually entered shipment and fleet data."
+  - "Real-time weather, GPS, and IoT sensor data are not yet connected."
+  - "Route recommendations are based on predefined logic rather than live traffic or logistics data."
+  - "The current risk-scoring system uses rule-based calculations and can be improved with machine learning."
+  - "The prototype is currently a command-line C++ application and does not yet have a web dashboard."
 
 # =============================================================================
 # ARTIFACT LOCATIONS
@@ -63,7 +66,7 @@ artifacts:
   source_code: "src/"
   setup_guide: "docs/setup-guide.md"
   architecture_doc: "docs/architecture.md"
-  demo_video: "demo/demo-video-link.txt"   # URL to hosted video (YouTube, Loom, Box)
-  live_demo: "demo/live-demo-url.txt"      # URL to deployed demo (optional)
+  demo_video: "demo/demo-video-link.txt"
+  live_demo: "demo/live-demo-url.txt"
   screenshots: "demo/screenshots/"
   presentation: "presentation/"
