@@ -1,41 +1,71 @@
 # Solution Overview
 
-## What We Built
+## Introduction
 
-[Describe your solution in plain language. Avoid jargon — write as if explaining to a smart colleague unfamiliar with your tech stack.]
+SmartSupply AI is a supply chain disruption assistant designed to help logistics teams identify high-risk shipments and make faster operational decisions.
 
-## How It Works
+The current prototype is implemented as a C++ command-line application.
 
-[Explain the core mechanism step by step. A numbered list or simple flow works well here.]
+## How the Solution Works
 
-1. [Step 1: e.g., "User connects their GitHub repository via OAuth"]
-2. [Step 2: e.g., "The system ingests pipeline logs and feeds them to watsonx.ai"]
-3. [Step 3: e.g., "An anomaly score is computed and displayed on the dashboard"]
-4. [Step 4: e.g., "Alerts are sent to Slack when the score exceeds a threshold"]
+The user enters shipment and fleet information into the application.
 
-## Architecture Diagram
+The system then:
 
-> See [`architecture.md`](architecture.md) for the detailed diagram.
+1. Checks the status of each shipment.
+2. Calculates a risk score based on shipment status.
+3. Checks cold-chain temperature conditions.
+4. Classifies shipments into Low, Medium, or High priority.
+5. Recommends an alternate route for high-risk shipments.
+6. Calculates the number of idle trucks.
+7. Recommends redeploying idle trucks to high-priority shipments.
 
-[Optionally include a simple ASCII or Mermaid diagram here for quick reference.]
+## Core Mechanism
 
-```
-[User] → [Frontend: React] → [API: FastAPI] → [watsonx.ai] → [Dashboard]
-                                    ↓
-                             [PostgreSQL DB]
-```
+The prototype uses rule-based decision logic.
 
-## Key Design Decisions
+For example:
 
-| Decision | Rationale |
-|---|---|
-| [e.g., Used watsonx.ai for anomaly detection] | [e.g., Pre-trained models reduced time-to-value vs. building from scratch] |
-| [Decision 2] | [Rationale 2] |
-| [Decision 3] | [Rationale 3] |
+- A disrupted shipment receives a higher risk score.
+- A delayed shipment receives a medium risk score.
+- A cold-chain temperature outside the defined safe range increases the risk.
+- A high-risk shipment receives an immediate-action recommendation.
+- Idle trucks are identified by comparing total trucks with busy trucks.
 
-## IBM Technologies Used
+## User Experience
 
-[Explain specifically HOW you used each IBM technology — not just that you used it.]
+The user interacts with the application through the command line.
 
-- **[IBM Tech 1, e.g., watsonx.ai]:** [How it was used — e.g., "Used the `ibm/granite-13b-instruct-v2` model via the Python SDK to classify anomaly types from log text."]
-- **[IBM Tech 2]:** [How it was used]
+The application first collects shipment information and then generates a risk report.
+
+The report displays:
+
+- Shipment ID
+- Route
+- Risk score
+- Priority level
+- Recommended action
+- Cold-chain warnings
+- Fleet utilisation information
+
+## What Makes the Solution Useful
+
+Instead of manually checking every shipment, the prototype provides a structured risk report and highlights shipments that require attention.
+
+It combines shipment disruption analysis, cold-chain monitoring, and fleet utilisation in one application.
+
+## Future Improvements
+
+The prototype can be extended with:
+
+- Real-time GPS data
+- Weather information
+- IoT temperature sensors
+- Live traffic information
+- Machine-learning-based risk prediction
+- A web-based dashboard
+- Real-time IBM Bob/AI integration
+
+## Current Scope
+
+The current version is a prototype using manually entered data and predefined decision rules. It demonstrates the core idea of identifying supply chain risks and recommending operational actions.
