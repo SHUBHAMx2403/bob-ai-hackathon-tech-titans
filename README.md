@@ -1,121 +1,168 @@
-# 🚀 [Your Project Title Here]
+# 🚚 SmartSupply AI – Supply Chain Disruption Assistant
 
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
+> An intelligent prototype for identifying shipment risks, cold-chain problems, and idle fleet assets.
 
 ---
 
 ## 👥 Team
 
-| Field | Value |
-|---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+| Field         | Value                                              |
+| ------------- | --------------------------------------             |
+| **Team Name** | **tech titans**                                    |
+| **Track**     | **AI**                                             |
+| **Team Lead** | **SHUBHAM SHIYAL—26it085@charusat.edu.in**         |
+| **Members**   | **MEGHAL PATEL,ADIT ROHIT,SHUBH SONI**             |
 
 ---
 
 ## 🎯 Problem Statement
 
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
+Supply chain disruptions caused by weather events, port strikes, and geopolitical crises can affect hundreds of shipments at the same time. It is difficult to track these disruptions manually, while some fleet assets remain idle and other routes become overloaded.
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
+Cold-chain shipments are especially vulnerable because temperature excursions can spoil valuable cargo and may only be discovered at delivery.
 
 ---
 
 ## 💡 Solution
 
-> In 2–3 sentences: What did you build? How does it solve the problem above?
+**SmartSupply AI** is a supply chain disruption assistant that analyses shipment and fleet information to identify disrupted or delayed shipments and prioritise them based on risk.
 
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
+It detects cold-chain temperature excursions, identifies idle fleet assets for redeployment, and recommends alternative routes or carriers for affected shipments.
 
 ---
 
 ## ✨ Key Features
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
+* **Shipment Disruption Detection:** Identifies normal, delayed, and disrupted shipments.
+* **Risk Scoring:** Calculates a risk score and classifies shipments as Low, Medium, or High priority.
+* **Route Recommendation:** Suggests an alternate route for high-risk shipments.
+* **Fleet Utilisation:** Identifies idle trucks that can be redeployed to high-priority shipments.
+* **Cold-Chain Monitoring:** Detects unsafe temperature conditions and generates a warning.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category | Technologies |
-|---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
+| Category             | Technologies                 |
+| -------------------- | ---------------------------- |
+| **Languages**        | C++                          |
+| **Frameworks**       | None                         |
+| **IBM Technologies** | IBM Bob                      |
+| **Databases**        | None                         |
+| **Other**            | GitHub, C++ Standard Library |
 
 ---
 
 ## 📁 Repository Structure
 
-```
-├── src/                  # All source code
-├── docs/                 # Written documentation
+```text
+├── src/
+│   ├── main.cpp
+│   └── README.md
+│
+├── docs/
 │   ├── problem-statement.md
 │   ├── solution-overview.md
 │   ├── architecture.md
 │   └── setup-guide.md
-├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
-├── presentation/         # Slide deck
-└── submission.yaml       # Structured submission metadata
+│
+├── demo/
+│   ├── screenshots/
+│   ├── demo-video-link.txt
+│   └── live-demo-url.txt
+│
+├── presentation/
+│   └── slides.pdf
+│
+└── submission.yaml
 ```
 
 ---
 
 ## ⚡ How to Run
 
-> **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
+### Requirements
+
+* C++ compiler
+* Git
+* Windows, Linux, or macOS
+
+### 1. Clone the repository
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
-
-# 2. Install dependencies
-[your install command here]
-
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
-
-# 4. Run the project
-[your run command here]
+git clone https://github.com/shubhamx2403/bob-ai-hackathon-tech-titans.git
+cd bob-ai-hackathon-tech-titans
 ```
+
+### 2. Compile the program
+
+```bash
+g++ src/main.cpp -o SmartSupply
+```
+
+### 3. Run the program
+
+On Linux/macOS:
+
+```bash
+./SmartSupply
+```
+
+On Windows:
+
+```bash
+SmartSupply.exe
+```
+
+### 4. Enter shipment information
+
+The program will ask for:
+
+* Shipment ID
+* Source
+* Destination
+* Shipment status
+* Cold-chain status
+* Temperature
+* Total trucks
+* Busy trucks
+
+The program then generates a risk report and recommendations.
 
 ---
 
 ## 🖥️ Demo
 
-| Artifact | Link |
-|---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
-| 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
-| 📊 Presentation | [See presentation/slides.pdf](presentation/) |
+| Artifact        | Location                   |
+| --------------- | -------------------------- |
+| 📹 Demo Video   | `demo/demo-video-link.txt` |
+| 🌐 Live Demo    | `demo/live-demo-url.txt`   |
+| 🖼️ Screenshots | `demo/screenshots/`        |
+| 📊 Presentation | `presentation/slides.pdf`  |
+
+If the project is not deployed online, `live-demo-url.txt` will contain:
+
+```text
+NOT DEPLOYED
+```
 
 ---
 
 ## ⚠️ Known Limitations
 
-> Be honest — judges appreciate transparency over overclaiming.
-
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
+* The current prototype uses manually entered shipment and fleet data.
+* Real-time weather, GPS, and IoT sensor data are not yet connected.
+* Route recommendations are based on predefined logic rather than live traffic or logistics data.
+* The current risk-scoring system uses rule-based calculations and can be improved with machine learning.
+* The current prototype is a command-line C++ application and does not yet have a web dashboard.
 
 ---
 
 ## 🏅 What We're Most Proud Of
 
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
+We are proud of creating a simple and practical solution to a real-world supply chain problem.
+
+SmartSupply AI brings shipment risk detection, cold-chain monitoring, fleet utilisation, and actionable recommendations together in one solution. Our goal is to make complex supply chain problems easier to understand and help users take action before disruptions become more serious.
 
 ---
+
